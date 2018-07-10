@@ -1,0 +1,138 @@
+.sf-menu { 
+	padding:0px 0 0 0px; 
+	background:none; 
+	position:relative;
+	height:50px;
+	z-index:3;
+	background:url(../images/bg-row-menu.gif) 0 0 repeat-x #f2f1f2;
+	border-bottom:1px solid #fff;
+	border-right:1px solid #fff;
+	border-radius:4px 4px 6px 6px;
+-moz-border-radius:4px 4px 6px 6px;
+-webkit-border-radius:4px 4px 6px 6px;
+}
+ul.sf-menu li {
+	float:left;
+	position:relative;
+	padding:0;
+	border-right:1px solid #fff;
+	background:url(../images/bg-menu.png) left top repeat-x;
+}
+.sf-menu li.first{
+	border-radius:4px 0 0 4px;
+-moz-border-radius:4px 0 0 4px;
+-webkit-border-radius:4px 0 0 4px;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu li.current{
+	padding:0;
+	border-right:1px solid #363539;
+	background-position: left bottom;
+	background-color:#252527;
+}
+.sf-menu li span{
+	position:absolute;
+	width:100%;
+	height:7px;
+	bottom:-7px;
+	z-index:9;
+	background:url(../images/marker-menu.png) center 0 no-repeat;
+}
+.sf-menu li:hover span, .sf-menu li.sfHover span, .sf-menu li.current span{
+	background-position:center bottom;
+}
+.sf-menu li a {
+	display:block; 
+	padding:15px 19px 18px 18px; 
+	color:#3d3949;
+	text-shadow:1px 0 0 #3d3949;
+	font-size:14px; 
+	line-height:1.3em;  
+	text-align:center; 
+	background: none;
+}
+.sf-menu li.first a{
+	padding:15px 19px 18px 20px;
+}
+.sf-menu li:hover a, 
+.sf-menu li.sfHover a, 
+.sf-menu li.current a{
+	color:#fff;
+	text-shadow:1px 0 0 #fff;
+}
+
+.sf-menu ul {
+	position:		absolute;
+	width:			931px; /* left offset of submenus need to match (see below) */
+	background:  none;
+	padding: 0px 0px 0px 19px;
+	z-index:99;
+}
+
+.sf-menu li.sfHover ul li {
+	float:left;
+	background:none;
+	margin-right:18px;
+	margin-bottom:0px;
+	border:none;
+}
+ 
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0px;
+	top:			60px; /* match top ul list item height */
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	width:123px;
+	background: url(../images/bg-submenu-ul.gif) 0 0 repeat-x #222223;
+	padding: 15px 0px 19px 19px;
+	border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			-19px; /* match ul width */
+	top:			26px;
+	z-index:99;
+}
+
+
+
+.sf-menu li:hover li a, 
+.sf-menu li.sfHover li a {
+	display:inline-block;
+	font-weight:normal;
+	text-transform:none;
+	color:#8c8b8b;
+	text-shadow:none;
+	font-size:12px;
+	line-height:1.2em;
+	background:none;
+	border:none;
+	padding:0px 0 0px 0px;
+	text-align:left;
+
+}
+.sf-menu li:hover li:hover a, .sf-menu li:hover li.sfHover a,
+.sf-menu li.sfHover li:hover a, .sf-menu li.sfHover li.sfHover a{color:#fefefe;}
+.sf-menu li li li, .sf-menu li.first li li {
+	background:none;
+	float:none;
+	display:block;
+	text-align:left;
+	margin-bottom:7px;
+}
+.sf-menu li li li.last{
+	margin-bottom:0;
+}
+.sf-menu li li li:hover {
+	background:none;
+}
+.sf-menu li:hover li:hover li a, .sf-menu li.sfHover li:hover li a, .sf-menu li:hover li.sfHover li a, .sf-menu li.sfHover li.sfHover li a {color:#7a7979; padding:0px; background:none; display:inline-block;}
+.sf-menu li:hover li:hover li:hover a, .sf-menu li.sfHover li:hover li:hover a, .sf-menu li:hover li.sfHover li:hover a, .sf-menu li.sfHover li.sfHover li:hover a {color:#fefefe;}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline:		0;
+}

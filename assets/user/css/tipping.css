@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.paraheading-main {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+.bodymaintext {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+	line-height: 22px;
+}
+.bodytext-mid {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #666;
+}
+.newslist {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	line-height: 18px;
+}
+.bettinginfo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #333;
+}
+.news-text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #333;
+}
